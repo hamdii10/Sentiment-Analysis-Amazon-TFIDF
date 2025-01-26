@@ -3,17 +3,11 @@ import pickle
 import os
 
 # Load the pre-trained model and vectorizer
-def load_model_and_tfidf():
-    with open(r"X:\Github\Sentiment-Analysis-Amazon-TFIDF\models\model.pkl", 'rb') as f:
-        svc_model = pickle.load(f)
-    
-    with open(r"X:\Github\Sentiment-Analysis-Amazon-TFIDF\models\tfidf_vectorizer.pkl", 'rb') as f:
-        tfidf = pickle.load(f)
-        
-    return svc_model, tfidf
+model_path = os.path.join('models', 'model.pkl')
+vectorizer_path = os.path.join('models', 'tfidf_vectorizer.pkl')
 
-
-svc_model, tfidf = load_model_and_tfidf()
+model = pickle.load(open(model_path, 'rb'))
+vectorizer = pickle.load(open(vectorizer_path, 'rb'))
 
 # Title and description
 st.title("Sentiment Analysis Application")
