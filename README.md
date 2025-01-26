@@ -15,7 +15,7 @@ This repository contains a sentiment analysis project to classify Amazon reviews
 
 ## Try the App
 
-You can try the live version of this app here: [Amazon Reviews Sentiment Classifier](#)
+You can try the live version of this app here: [Amazon Reviews Sentiment Classifier](https://sentiment-analysis-amazon-tfidf-hamdii.streamlit.app/)
 
 
 ## Project Structure
